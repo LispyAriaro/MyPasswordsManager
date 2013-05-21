@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        max-height: 100px;
+        overflow-x: hidden;
+      }
+      textarea {
+        resize: none;
+      }
+      #content {
+        border: 1px solid rgb(0,0,0);
+        padding: 10px;
+      }
+    </style>
+    <script src="jquery-1.7.2.min.js"></script>
+    
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<script type="text/javascript" src="bootstrap.min.js" ></script>
+
+    <script src="json2.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <center>
+        <h4>My Passwords Manager</h4>
+        <button class='btn backToMain'>Back</button>
+      </center>
+
+      <label class='badNews'>Bad news! For some weird reason, your version of Google chrome
+      doesn't support local storage
+      </label>
+      
+      <div id="savedData">
+      
+      </div>
+      
+      <div id='addNewDataForm'>
+        <table>
+          <tr>
+            <td>Data name: </td>
+            <td><textarea name='dataName' rows="1" cols="15"></textarea></td>
+          </tr>
+          <tr>
+            <td>Data value: </td>
+            <td><textarea name='dataValue' rows="1" cols="15"></textarea></td>
+          </tr>
+          <tr>
+            <td>
+              <div class='btn-group' style="margin: '9px' 0;">
+                <button class="btn addTheData">Save</button>
+                <button class="btn closeNewDataForm">Cancel</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class='btn-group mainControls' style='margin: '9px' 0;" align='center'>
+        <button class="btn addNew">Add new</button>
+        <button class="btn viewAll">View all</button>
+        <button class="btn deleteAll">Delete all</button>
+      </div>
+    </div>
+  </body>
+</html>

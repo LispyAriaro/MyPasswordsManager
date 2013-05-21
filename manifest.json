@@ -1,0 +1,15 @@
+{
+    "manifest_version" : 2,
+    
+    "name": "My Passwords Manager",
+    "description": "Saves key-value pairs of data(e.g usernames and passwords) for a link in the html5 local storage.",
+    "version": "1.0",
+
+    "permissions": [
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "Arrow.gif",
+        "default_popup": "popup.html"
+    }
+}
