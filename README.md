@@ -10,4 +10,7 @@ Click on Extensions ...
 make sure to check 'developer mode'
 Click the 'Load unpacked extension' button
 
-A file/folder chooser popup will appear. Select the MyPasswordsManager folder. And that's it. 
+A file/folder chooser popup will appear. Select the MyPasswordsManager folder. And that's it. An arrow should appear 
+on your chrome browser. Click it when you need to save login details or view previously saved login details. The data 
+is never sent up to the cloud but stored locally.
+
